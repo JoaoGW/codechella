@@ -1,0 +1,85 @@
+@import '../../styles/variables.css';
+
+.ingresso{
+  background: rgb(237,235,223);
+  background: linear-gradient(180deg, rgba(237,235,223,1) 0%, rgba(252,233,206,1) 50%, rgba(251,218,178,1) 100%);
+  padding: 3em 10%;
+  margin: 0 auto;
+}
+
+.ingresso__titulo{
+  font-size: 30px;
+  font-family: var(--textos);
+  font-weight: bold;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto 2em auto;
+}
+
+.ingresso__corpo{
+  max-width: 40%;
+  margin: 0 auto;
+  background: rgb(194,219,230);
+  background: linear-gradient(180deg, rgba(194,219,230,1) 0%, rgba(251,235,212,1) 50%, rgba(250,207,158,1) 100%);
+  padding: 32px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.logo{
+  max-width: 120px;
+  max-height: 40px;
+  margin-bottom: 32px;
+}
+
+.ingresso__nome{
+  margin-bottom: 24px;
+  font-size: 30px;
+  font-family: var(--textos);
+}
+
+.ingresso__corpo_infos{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ingresso__corpo__textos{
+  margin-left: 48px;
+  font-size: 20px;
+  font-family: var(--textos);
+  font-weight: 500;
+}
+
+.qrcode{
+  max-width: 190px;
+  max-height: 210px;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1079px){
+  .ingresso__titulo{
+    width: 85%;
+  }
+
+  .ingresso__corpo{
+    max-width: 90%;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 766px){
+  .ingresso__titulo{
+    width: 95%;
+  }
+
+  .ingresso__corpo{
+    max-width: 95%;
+    padding: 16px;
+  }
+
+  .ingresso__corpo_infos{
+    flex-direction: column;
+  }
+
+  .qrcode{
+    margin-bottom: 30px;
+  }
+}

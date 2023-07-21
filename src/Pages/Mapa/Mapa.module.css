@@ -1,0 +1,133 @@
+@import '../../styles/variables.css';
+
+.mapa{
+  margin: 0 auto;
+}
+
+.setores{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 3em 10%;
+  margin-right: 0;
+  align-items: center;
+  background: rgb(220,229,226);
+  background: linear-gradient(180deg, rgba(220,229,226,1) 0%, rgba(238,235,223,1) 50%, rgba(252,237,214,1) 100%);
+}
+
+.setores__mapa_container{
+  justify-self: center;
+  width: 65%;
+}
+
+.setores__mapa{
+  width: 690px;
+  max-width: 80%;
+  height: 609px;
+  max-height: 65vh;
+}
+
+.setores__legenda{
+  width: calc(100% - 65%);
+}
+
+.setores__legenda h2{
+  font-size: 30px;
+  font-family: var(--textos);
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.setores__legenda ul {
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+.setores__legenda ul li {
+  list-style-type: none;
+}
+
+.detalhes{
+  background: rgb(252,236,212);
+  background: linear-gradient(180deg, rgba(252,236,212,1) 0%, rgba(251,225,191,1) 50%, rgba(251,214,170,1) 100%);
+}
+
+.detalhes__titulo{
+  text-align: center;
+  font-size: 40px;
+  font-family: var(--textos);
+  font-weight: bold;
+  padding: 30px 0;
+}
+
+.detalhes__locais{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1079px){
+  .setores{
+    text-align: center;
+  }
+
+  .setores__mapa_container{
+    width: 100%;
+  }
+  
+  .setores__mapa{
+    width: 100%;
+    height: 609px;
+    max-height: 65vh;
+  }
+
+  .setores__legenda{
+    margin: 0 auto;
+  }
+
+  .setores__legenda ul li{
+    width: 300px;
+  }
+
+  .detalhes__locais div:nth-child(2){
+    margin-top: 0 !important;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 766px){
+  .setores{
+    text-align: center;
+    padding: 3em 1%;
+  }
+
+  .setores__mapa_container{
+    width: 100%;
+  }
+  
+  .setores__mapa{
+    width: 100%;
+    height: 609px;
+    max-height: 65vh;
+  }
+
+  .setores__legenda{
+    margin: 0 150px 0 auto;
+  }
+
+  .setores__legenda ul li{
+    width: 250px;
+  }
+
+  .detalhes__titulo{
+    font-size: 32px;
+  }
+
+  .detalhes__locais div:nth-child(2){
+    margin-top: 0 !important;
+  }
+}

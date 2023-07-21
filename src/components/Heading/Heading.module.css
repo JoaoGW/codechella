@@ -1,0 +1,60 @@
+@import '../../styles/variables.css';
+
+.navbarStyle{
+  background: var(--azul-escuro);
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 32px;
+  align-items: center;
+}
+
+.navBar__logo_img{
+  max-width: 230px;
+  max-height: 100px;
+}
+
+.navBar__links{
+  color: #FFF;
+  display: flex;
+  flex-direction: row;
+}
+
+.link{
+  margin: 0 25px 0 auto;
+  font-family: var(--textos);
+  font-size: 20px;
+  cursor: pointer;
+  color: #FFF;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1079px){
+  .navbarStyle{
+    flex-direction: column;
+    height: 12vh;
+  }
+
+  .link{
+    margin: 0 40px 0 auto;
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 766px){
+  .navbarStyle{
+    flex-direction: column;
+    height: 20vh;
+  }
+
+  .navBar__links{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .link{
+    margin: 0 auto;
+    font-size: 17px;
+  }
+}

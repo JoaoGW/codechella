@@ -1,0 +1,73 @@
+@import '../../../styles/variables.css';
+
+.event{
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.event__img{
+  height: 70%;
+  width: 30em;
+  border-radius: 15px;
+  margin-right: 50px;
+}
+
+.event__right_date{
+  font-weight: bold;
+  font-family: var(--textos);
+  font-size: 30px;
+  width: 60%;
+  margin: 0 auto 20px auto;
+}
+
+.event__right__desc{
+  font-size: 20px;
+  font-family: var(--textos);
+}
+
+.event__right__btn{
+  border: none;
+  outline: none;
+  color: #FFF;
+  background: var(--azul-escuro);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-family: var(--textos);
+}
+
+@media screen and (min-width: 767px) and (max-width: 1079px){
+  .event{
+    flex-wrap: wrap;
+    width: 80%;
+  }
+
+  .event__left{
+    margin: 0 auto;
+  }
+
+  .event__img{
+    height: 100%;
+    width: 35em;
+    margin: 0 auto 3em auto;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 766px){
+  .event{
+    flex-wrap: wrap;
+    width: 80%;
+  }
+
+  .event__left{
+    margin: 0 auto;
+  }
+
+  .event__img{
+    height: 100%;
+    width: 20em;
+    margin: 0 auto 3em auto;
+  }
+}

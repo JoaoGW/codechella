@@ -1,0 +1,50 @@
+.banner{
+  height: 45vh;
+  max-width: 100%;
+}
+
+.banner__photo{
+  max-height: 45vh;
+  object-fit: cover;
+  object-position: 0 0;
+  opacity: 0.5;
+}
+
+.banner__text{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  font-family: var(--titulos);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1079px){
+  .banner{
+    height: 30vh;
+  }
+  
+  .banner__photo{
+    max-height: 30vh;
+  }
+
+  .banner__text{
+    top: 27.5%;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 767px){
+  .banner{
+    height: 25vh;
+  }
+  
+  .banner__photo{
+    max-height: 25vh;
+  }
+
+  .banner__text{
+    width: 63%;
+    text-align: center;
+    top: 32.5%;
+  }
+}

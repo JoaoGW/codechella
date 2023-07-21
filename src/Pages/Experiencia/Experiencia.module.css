@@ -1,0 +1,111 @@
+@import '../../styles/variables.css';
+
+.experiencia{
+  margin: 0 auto;
+}
+
+.acessibilidade, .sustentabilidade, .atracoes{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  padding: 3em 10%;
+}
+
+.acessibilidade{
+  background: rgb(220,228,225);
+  background: linear-gradient(180deg, rgba(220,228,225,1) 0%, rgba(233,233,223,1) 50%, rgba(246,238,221,1) 100%);
+}
+
+.sustentabilidade{
+  background: rgb(247,238,221);
+  background: linear-gradient(180deg, rgba(247,238,221,1) 0%, rgba(251,236,212,1) 50%, rgba(251,229,198,1) 100%);
+}
+
+.atracoes{
+  background: rgb(251,228,197);
+  background: linear-gradient(180deg, rgba(251,228,197,1) 0%, rgba(250,220,182,1) 50%, rgba(251,214,171,1) 100%);
+}
+
+.acessibilidade span, .atracoes span, .sustentabilidade span{
+  max-width: 60%;
+  margin: 0 auto;
+  font-family: var(--textos);
+  justify-self: start;
+  padding-left: 40px;
+}
+
+.title{
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.title__inv{
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.images__intros{
+  height: 300px;
+  max-height: 40vh;
+  width: 600px;
+  max-width: 35em;
+  justify-self: center;
+  border-radius: 15px;
+}
+
+.span__show_mobile{
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1079px){
+  .acessibilidade, .sustentabilidade, .atracoes{
+    justify-content: center;
+  }
+
+  .acessibilidade span, .atracoes span, .sustentabilidade span{
+    max-width: 90%;
+    text-align: center;
+    margin-top: 1.5rem;
+    padding-left: 0;
+    font-size: 20px;
+  }
+
+  .span__show_mobile{
+    display: block;
+  }
+
+  .span__hide_mobile{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 766px){
+  .acessibilidade, .sustentabilidade, .atracoes{
+    justify-content: center;
+  }
+
+  .acessibilidade span, .atracoes span, .sustentabilidade span{
+    max-width: 95%;
+    text-align: center;
+    margin-top: 1.5rem;
+    padding-left: 0;
+    font-size: 20px;
+  }
+
+  .span__show_mobile{
+    display: block;
+  }
+
+  .span__hide_mobile{
+    display: none;
+  }
+
+  .images__intros{
+    height: 200px;
+    max-height: 30vh;
+    width: 400px;
+    max-width: 100%;
+  }
+}

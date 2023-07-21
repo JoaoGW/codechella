@@ -1,0 +1,89 @@
+@import '../../../styles/variables.css';
+
+.lineup__content{
+  padding-bottom: 2.5em;
+}
+
+.date{
+  background: var(--mostarda);
+  padding: 13px;
+  max-width: 18%;
+  margin: 32px auto 48px auto;
+  font-size: 30px;
+  color: #FFF;
+  line-height: normal;
+  font-family: var(--titulos);
+}
+
+.date_lineLeft{
+  position: relative;
+  border: 1px solid #DF9010;
+  width: 30%;
+  top: -80px;
+  left: 10%;
+}
+
+.date_lineRight{
+  position: relative;
+  border: 1px solid #DF9010;
+  width: 30%;
+  top: -80px;
+  right: -60%;
+}
+
+.show_name{
+  font-family: var(--textos);
+  color: #444;
+  font-weight: bold;
+  font-size: 31px;
+}
+
+.show_singers{
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  font-size: 28px;
+  font-family: var(--textos);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.show_artists{
+  font-family: var(--textos);
+  font-size: 26px;
+  margin-right: 25px;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1079px){
+  .lineup__content{
+    padding-bottom: 1.5em;
+  }
+
+  .date{
+    max-width: 40%;
+  }
+
+  .date_lineLeft, .date_lineRight{
+    width: 17.5%;
+    right: -72%;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 766px){
+  .lineup__content{
+    padding-bottom: 1.5em;
+  }
+
+  .date{
+    max-width: 80%;
+  }
+
+  .date_lineLeft, .date_lineRight{
+    display: none;
+  }
+
+  .show_artists{
+    margin: 0 0 20px 0;
+  }
+}

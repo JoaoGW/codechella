@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "cor": "#0E7DF1",
+    "nome": "Pista Premium"
+  },
+  {
+    "id": 2,
+    "cor": "#FE016E",
+    "nome": "Pista Comum"
+  },
+  {
+    "id": 3,
+    "cor": "#01A89E",
+    "nome": "Cadeiras térreo"
+  },
+  {
+    "id": 4,
+    "cor": "#3F51B5",
+    "nome": "Cadeiras superiores"
+  },
+  {
+    "id": 5,
+    "cor": "#0E7DF1",
+    "nome": "Rampas"
+  }
+]

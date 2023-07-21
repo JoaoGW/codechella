@@ -1,0 +1,127 @@
+@import '../../styles/variables.css';
+
+.ingresso{
+  background: rgb(237,235,223);
+  background: linear-gradient(180deg, rgba(237,235,223,1) 0%, rgba(252,233,206,1) 50%, rgba(251,218,178,1) 100%);
+}
+
+.title{
+  padding: 48px 0;
+  text-align: center;
+  font-size: 40px;
+  font-family: var(--titulos);
+}
+
+form{
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ingressos__label{
+  font-size: 28px;
+  font-family: var(--textos);
+  font-weight: bold;
+}
+
+.ingressos__field{
+  height: 50px;
+  width: 800px;
+  max-width: 100%;
+  color: #000;
+  border: none;
+  background: #FFF;
+  margin-bottom: 32px;
+  padding: 10px;
+  line-height: 40px;
+  font-size: 20px;
+  font-family: var(--textos);
+  font-weight: 500;
+}
+
+.ingressos__tipo, .ingressos__nascimento{
+  max-width: 40%;
+  margin-bottom: 1em;
+}
+
+.ingressos__tipo{
+  margin-right: 2.5rem;
+}
+
+.ingressos__enviar{
+  display: flex;
+  flex-direction: row;
+  padding: 8px 16px;
+  background: var(--azul-escuro);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.link, .ingressos__enviar{
+  max-height: 60px;
+  max-width: 200px;
+}
+
+.link{
+  margin: 0 auto 48px auto;
+}
+
+.ingressos__enviar_botao{
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: var(--textos);
+}
+
+.ingressos__enviar_seta{
+  max-width: 32px;
+  max-height: 40px;
+  margin-left: 15px;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1079px){
+  .ingressos__field{
+    width: 400px;
+  }
+
+  .ingressos__tipo{
+    max-width: 400px;
+    margin-bottom: 1em;
+  }
+
+  .ingressos__label{
+    width: 280px;
+  }
+
+  .ingressos__nascimento{
+    max-width: 300px;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 766px){
+  form{
+    width: 80%;
+  }
+
+  .ingressos__field{
+    width: 310px;
+  }
+
+  .ingressos__tipo{
+    max-width: 400px;
+    margin-bottom: 1em;
+  }
+
+  .ingressos__label{
+    width: 280px;
+    font-size: 23px;
+  }
+
+  .ingressos__nascimento{
+    max-width: 300px;
+  }
+}

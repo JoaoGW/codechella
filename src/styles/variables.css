@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Raleway:wght@400;700&display=swap');
+
+:root{
+  --azul-escuro: #2E7BA2;
+  --mostarda: #DF9010;
+  --titulos: 'Calistoga', cursive;
+  --textos: 'Raleway', sans-serif;;
+}
